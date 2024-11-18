@@ -1,6 +1,6 @@
 {
   "name": "@arifwidianto/tsp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TypeScript Project Initializer CLI",
   "main": "dist/index.js",
   "bin": {
@@ -38,15 +38,15 @@
     "chmod-cli": "^2.0.1",
     "inquirer": "^8.2.6",
     "ora": "^5.4.1",
-    "semver": "^7.5.4"
+    "semver": "^7.5.4",
+    "rimraf": "^6.0.1",
+    "@types/node": "^20.11.19",
+    "@types/inquirer": "^8.2.10",
+    "@types/semver": "^7.5.7",
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "@nestjs/cli": "^10.4.7",
-    "@quasar/cli": "^2.4.1",
-    "@types/inquirer": "^8.2.10",
     "@types/jest": "^29.5.14",
-    "@types/node": "^20.11.19",
-    "@types/semver": "^7.5.7",
     "@typescript-eslint/eslint-plugin": "^8.14.0",
     "@typescript-eslint/parser": "^8.14.0",
     "eslint": "^9.15.0",
@@ -54,9 +54,7 @@
     "eslint-plugin-prettier": "^5.2.1",
     "jest": "^29.7.0",
     "prettier": "^3.3.3",
-    "rimraf": "^6.0.1",
     "ts-jest": "^29.2.5",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "ts-node": "^10.9.2"
   }
 }
