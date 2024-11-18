@@ -1,5 +1,5 @@
 {
-  "name": "tsp",
+  "name": "@arifwidianto/tsp",
   "version": "1.0.0",
   "description": "TypeScript Project Initializer CLI",
   "main": "dist/index.js",
