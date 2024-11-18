@@ -4,7 +4,7 @@
   "description": "TypeScript Project Initializer CLI",
   "main": "dist/index.js",
   "bin": {
-    "tsp": "./dist/index.js"
+    "tsp": "dist/index.js"
   },
   "scripts": {
     "chmod:bin": "chmod-cli ./dist/index.js -m 0o755",
@@ -25,7 +25,7 @@
   "author": "ArifWidianto <https://github.com/sikancil>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sikancil/tsp.git"
+    "url": "git+https://github.com/sikancil/tsp.git"
   },
   "bugs": {
     "url": "https://github.com/sikancil/tsp/issues"
