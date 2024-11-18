@@ -1,0 +1,54 @@
+{
+  "name": "tsp",
+  "version": "1.0.0",
+  "description": "TypeScript Project Initializer CLI",
+  "main": "dist/index.js",
+  "bin": {
+    "tsp": "./dist/index.js"
+  },
+  "scripts": {
+    "chmod:bin": "chmod-cli ./dist/index.js -m 0o755",
+    "build": "rimraf ./dist ; tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest --coverage=true --cache=false --runInBand=true --forceExit --detectOpenHandles",
+    "prepack": "npm run build",
+    "postbuild": "npm run chmod:bin",
+    "postinstall": "npm run build"
+  },
+  "keywords": [
+    "typescript",
+    "cli",
+    "project",
+    "initializer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "chalk": "^4.1.2",
+    "chmod-cli": "^2.0.1",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1",
+    "semver": "^7.5.4"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.4.7",
+    "@quasar/cli": "^2.4.1",
+    "@types/inquirer": "^8.2.10",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.11.19",
+    "@types/semver": "^7.5.7",
+    "@typescript-eslint/eslint-plugin": "^8.14.0",
+    "@typescript-eslint/parser": "^8.14.0",
+    "eslint": "^9.15.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
