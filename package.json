@@ -1,9 +1,11 @@
 {
   "name": "@arifwidianto/tsp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "TypeScript Project Initializer CLI",
   "main": "dist/index.js",
-  "files": ["dist/*"],
+  "files": [
+    "dist/*"
+  ],
   "bin": {
     "tsp": "dist/index.js"
   },
