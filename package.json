@@ -1,8 +1,9 @@
 {
   "name": "@arifwidianto/tsp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "TypeScript Project Initializer CLI",
   "main": "dist/index.js",
+  "files": ["dist/*"],
   "bin": {
     "tsp": "dist/index.js"
   },
@@ -33,19 +34,20 @@
   "homepage": "https://github.com/sikancil/tsp",
   "license": "MIT",
   "dependencies": {
+    "@types/inquirer": "^8.2.10",
+    "@types/node": "^20.11.19",
+    "@types/semver": "^7.5.7",
     "axios": "^1.6.7",
     "chalk": "^4.1.2",
     "chmod-cli": "^2.0.1",
     "inquirer": "^8.2.6",
     "ora": "^5.4.1",
-    "semver": "^7.5.4",
     "rimraf": "^6.0.1",
-    "@types/node": "^20.11.19",
-    "@types/inquirer": "^8.2.10",
-    "@types/semver": "^7.5.7",
+    "semver": "^7.5.4",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@nestjs/cli": "^10.4.8",
     "@types/jest": "^29.5.14",
     "@typescript-eslint/eslint-plugin": "^8.14.0",
     "@typescript-eslint/parser": "^8.14.0",

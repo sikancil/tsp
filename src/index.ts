@@ -865,6 +865,16 @@ export async function setupFramework(framework: string): Promise<void> {
     await setupTesting(projectPath, framework);
 
     spinner.succeed("Framework setup complete");
+
+    console.log();
+    console.info(
+      chalk.green(
+        `🎉 ${framework} project codename ${chalk.bold(projectName)} has been setup successfully (CLI installed ${
+          preferredInstallation === "manually" ? "manually" : "locally"
+        }).`
+      )
+    );
+    process.exit(0);
   } catch (error) {
     spinner.fail("Error setting up framework");
     console.error(error);
